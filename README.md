@@ -1,52 +1,93 @@
-# MERN Stack Capstone Project
+# 🩺 Pisto WellPoint – MERN Stack Healthcare Appointment System
 
-This assignment focuses on designing, developing, and deploying a comprehensive full-stack MERN application that showcases all the skills you've learned throughout the course.
+**Pisto WellPoint** is a full-stack healthcare appointment platform built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js). The system supports secure, independent dashboards for **Admins**, **Doctors**, and **Users**, enabling seamless and transparent appointment scheduling and management.
 
-## Assignment Overview
+🎯 **Aligned with UN SDG 3** – Good Health and Well-being: Promoting equitable, digital-first access to medical services.
 
-You will:
-1. Plan and design a full-stack MERN application
-2. Develop a robust backend with MongoDB, Express.js, and Node.js
-3. Create an interactive frontend with React.js
-4. Implement testing across the entire application
-5. Deploy the application to production
+---
 
-## Getting Started
+## 🔐 Key Features
 
-1. Accept the GitHub Classroom assignment
-2. Clone the repository to your local machine
-3. Follow the instructions in the `Week8-Assignment.md` file
-4. Plan, develop, and deploy your capstone project
+- 🔒 **Secure authentication** using JWT & bcrypt
+- 👨‍⚕️ **Doctor dashboard**: Manage availability, view appointments, patient list
+- 👤 **User dashboard**: Book, cancel, and track appointments
+- 🧑‍💼 **Admin dashboard**: Approve doctors, manage users, view reports
+- ⚙️ Role-based routing and protected routes
+- 🌐 Responsive UI using **React.js + Bootstrap/Tailwind**
+- ☁️ Cloud-ready & MongoDB Atlas compatible
 
-## Files Included
+---
 
-- `Week8-Assignment.md`: Detailed assignment instructions
+## 🚀 Getting Started
 
-## Requirements
+### 📦 Prerequisites
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git and GitHub account
-- Accounts on deployment platforms (Render/Vercel/Netlify/etc.)
+Make sure you have the following installed:
 
-## Project Ideas
+- Node.js (v18 or higher recommended)
+- MongoDB (local or MongoDB Atlas)
+- Git
+- Code editor (VS Code recommended)
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+---
 
-## Submission
+## 🛠️ Project Setup
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### 1. Clone the Repository
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+```bash
+git clone https://github.com/PLP-MERN-Stack-Development/week-8-capstone_-Opiso.git
+cd week-8-capstone_-Opiso/.git/
 
-## Resources
+pnpm install
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+.env
+PORT=5000
+MONGO_URI=mongodb+srv://<your-mongodb-uri>
+JWT_SECRET=your_jwt_secret
+
+pnpm run dev
+
+cd client
+pnpm install
+pnpm run dev
+
+```
+🌍 Dashboards Overview
+/admin → Admin Panel for managing users, doctors, and appointments
+
+/doctor → Doctor Panel with calendar, patient list, availability
+
+/user → Patient Portal to book, cancel, and view appointments
+
+Each route is protected with JWT authentication and role-based access.
+
+
+📈 Roadmap
+ JWT Auth for all roles
+
+ Role-based dashboards
+
+ SMS/WhatsApp reminders
+
+ M-Pesa & NHIF integration
+
+ Analytics & reporting module
+
+ Mobile app (React Native)
+
+🤝 Contributing
+Pull requests are welcome! Please open an issue first to discuss major changes.
+
+
+🌐 Contact
+GitHub: [@Opiso] (https://github.com/Opiso)
+
+Email: capisokokth@email.com
+
+LinkedIn: [Capis Otieno](https://www.linkedin.com/in/capis-otieno-506526332/)
+
+💙 SDG 3 Impact
+This project supports UN Sustainable Development Goal 3 – "Ensure healthy lives and promote well-being for all at all ages."
+
+By enabling affordable, digital-first access to medical care through smart scheduling, HealthBridge bridges gaps in access and transparency, especially in underserved communities.
